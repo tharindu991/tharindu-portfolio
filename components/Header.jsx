@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Nav from "./Nav";
+import MobileNav from "./MobileNav";
+
 const Header = () => {
   return (
     <header className="py-8 xl:py12 text-white">
@@ -16,9 +18,10 @@ const Header = () => {
           <Link href="./contact">
             <Button>Hire me</Button>
           </Link>
-
-          {/** Mobile nav */}
-          <div className="xl:hidden">mobile nav</div>
+        </div>
+        {/** Mobile nav */}
+        <div className="xl:hidden">
+          <MobileNav />
         </div>
       </div>
     </header>
