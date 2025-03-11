@@ -24,7 +24,7 @@ const projects = [
     description:
       "reLorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dolores, eaque hic exercitationem maiores.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "assets/work/thumb1.png",
+    image: "/assets/work/thumb1.png",
     live: "",
     github: "",
   },
@@ -39,7 +39,7 @@ const projects = [
       { name: "Tailwind CSS" },
       { name: "Javascript" },
     ],
-    image: "assets/work/thumb2.png",
+    image: "/assets/work/thumb2.png",
     live: "",
     github: "",
   },
@@ -54,7 +54,7 @@ const projects = [
       { name: "Tailwind CSS" },
       { name: "Javascript" },
     ],
-    image: "assets/work/thumb3.png",
+    image: "/assets/work/thumb3.png",
     live: "",
     github: "",
   },
@@ -62,10 +62,18 @@ const projects = [
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
+
+  const handleSlideChange = (swiper) => {
+    const currentIndex = swiper.activeIndex;
+    setProject(projects[currentIndex]);
+  };
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
@@ -114,10 +122,35 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="w-full xl:w-[50%]">slider</div>
+          <div className="w-full xl:w-[50%]">
+            <Swiper
+              spaceBetween={30}
+              slidesPerView={1}
+              className="xl:h-[520px] mb-12"
+              onSlideChange={handleSlideChange}
+            >
+              {projects.map((project, index) => {
+                return (
+                  <SwiperSlide key={index} className="w-full">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                      <div></div>
+                      <div>
+                        <Image
+                          src={project.image}
+                          fill
+                          className="object-cover"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 
