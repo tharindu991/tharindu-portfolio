@@ -7,9 +7,28 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaDatabase,
+  FaAws,
+  FaAndroid,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdoor, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdoor,
+  SiNextdotjs,
+  SiRedux,
+  SiTypescript,
+  SiExpress,
+  SiJest,
+  SiBitbucket,
+  SiDocker,
+  SiMobx,
+  SiStoryblok,
+  SiStorybook,
+  SiAntdesign,
+  SiShadcnui,
+  SiIos,
+} from "react-icons/si";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -26,7 +45,7 @@ import { ScrollArea } from "@radix-ui/react-scroll-area";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dolores, eaque hic exercitationem maiores quibusdam",
+    "I am a Senior Software Engineer based in the UK with 7+ years of experience in developing high-performance web and mobile applications. I specialise in React.js, React Native, TypeScript, Android, AWS serverless, and modern frontend technologies, crafting scalable and user-centric digital solutions. Passionate about UI/UX, performance optimisation, and cloud-based architectures, I excel at building intuitive and efficient applications that drive engagement and business growth.",
   info: [
     {
       fieldName: "Name",
@@ -67,27 +86,42 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dolores, eaque hic exercitationem maiores quibusdam",
+    "With over seven years of experience in software engineering, I have contributed to innovative web and mobile applications across fintech, healthcare, AI, and telecommunication domains. My expertise spans front-end and full-stack development, cloud computing, and scalable architectures.",
   items: [
     {
       company: "BotCircuits",
-      position: "Frontend Developer",
-      duration: "2024",
+      position: "Frontend Developer (Freelance)",
+      duration: "2023 - 2024",
     },
     {
       company: "Softwentures Pvt Ltd",
       position: "Senior Software Engineer",
       duration: "2021 - 2022",
+      location: "Colombo, Sri Lanka",
     },
     {
       company: "Mitra Innovation Ltd",
       position: "Senior Software Engineer",
       duration: "2018 - 2021",
+      location: "Colombo, Sri Lanka",
+    },
+    {
+      company: "Mitra Innovation Ltd",
+      position: "Software Engineer",
+      duration: "2017 - 2018",
+      location: "Colombo, Sri Lanka",
     },
     {
       company: "LOLC Technologies Ltd",
       position: "Associate Software Engineer",
-      duration: "2015 - 2018",
+      duration: "2016 - 2017",
+      location: "Colombo, Sri Lanka",
+    },
+    {
+      company: "LOLC Technologies Ltd",
+      position: "Trainee Software Engineer",
+      duration: "2015 - 2016",
+      location: "Colombo, Sri Lanka",
     },
   ],
 };
@@ -96,26 +130,26 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My Education",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dolores, eaque hic exercitationem maiores quibusdam",
+    "I have pursued a strong academic foundation in software engineering and project management, complemented by professional certifications in software development. My education has equipped me with the technical expertise and leadership skills to deliver high-quality software solutions.",
   items: [
     {
       institution: "Meta",
-      degree: "Professional Certificate in Meta Front-End Developer",
-      duration: "2024",
+      degree: "Professional Certificate in Meta Front-End Development",
+      duration: "2023",
     },
     {
-      institution: "Northumbria University",
+      institution: "Northumbria University, UK",
       degree: "M.Sc. International Project Management",
       duration: "2022 - 2024",
     },
     {
-      institution: "University of Westminster",
-      degree: "M.Sc. in Advanced Software Engineering ",
+      institution: "University of Westminster, UK",
+      degree: "M.Sc. Advanced Software Engineering",
       duration: "2017 - 2019",
     },
     {
-      institution: "Sri Lanka Institute of Information Technology",
-      degree: "B.Sc. Special (Hons) in Information Technology ",
+      institution: "Sri Lanka Institute of Information Technology (SLIIT)",
+      degree: "B.Sc. (Hons) in Information Technology - Special",
       duration: "2011 - 2015",
     },
   ],
@@ -124,39 +158,99 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dolores, eaque hic exercitationem maiores quibusdam",
+    "I specialize in building scalable and high-performance web and mobile applications using modern technologies. My expertise spans frontend, backend, cloud computing, and DevOps, enabling me to create seamless digital experiences.",
   skillList: [
     {
       icon: <FaHtml5 />,
-      name: "html 5",
+      name: "HTML5",
     },
     {
       icon: <FaCss3 />,
-      name: "css 3",
+      name: "CSS3",
     },
     {
       icon: <FaJs />,
-      name: "Javascript",
+      name: "JavaScript",
+    },
+    {
+      icon: <SiTypescript />,
+      name: "TypeScript",
     },
     {
       icon: <FaReact />,
-      name: "react.js",
+      name: "React.js",
     },
     {
       icon: <SiNextdotjs />,
-      name: "next.js",
+      name: "Next.js",
+    },
+    {
+      icon: <FaReact />,
+      name: "React Native",
+    },
+    {
+      icon: <FaAndroid />,
+      name: "Android",
+    },
+    {
+      icon: <SiIos />,
+      name: "iOS",
     },
     {
       icon: <SiTailwindcss />,
-      name: "node.js",
+      name: "Tailwind CSS",
+    },
+    {
+      icon: <SiAntdesign />,
+      name: "Ant Design",
+    },
+    {
+      icon: <SiShadcnui />,
+      name: "Shadcn UI",
+    },
+    {
+      icon: <SiRedux />,
+      name: "Redux",
+    },
+    {
+      icon: <SiMobx />,
+      name: "MobX",
+    },
+
+    {
+      icon: <FaNodeJs />,
+      name: "Node.js",
+    },
+    {
+      icon: <SiExpress />,
+      name: "Express.js",
+    },
+    {
+      icon: <FaAws />,
+      name: "AWS (Lambda, Amplify, S3)",
+    },
+    {
+      icon: <FaDatabase />,
+      name: "MySQL, Oracle & NoSQL",
+    },
+    {
+      icon: <SiJest />,
+      name: "Jest & React Testing Library",
     },
     {
       icon: <FaFigma />,
-      name: "Figma.js",
+      name: "Figma",
+    },
+    {
+      icon: <SiStorybook />,
+      name: "Storybook",
+    },
+    {
+      icon: <SiBitbucket />,
+      name: "Git & Bitbucket",
     },
   ],
 };
-
 const Resume = () => {
   return (
     <motion.div
@@ -186,10 +280,7 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
-                <ScrollArea
-                  className="h-[400px]"
-                  // style={{ background: "#fff" }}
-                >
+                <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
@@ -218,10 +309,7 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
-                <ScrollArea
-                  className="h-[400px]"
-                  // style={{ background: "#fff" }}
-                >
+                <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => {
                       return (

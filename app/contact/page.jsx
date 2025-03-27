@@ -32,7 +32,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "111, Tech City, London",
+    description: "London, United Kingdom",
   },
 ];
 
@@ -68,9 +68,12 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
+                    <SelectItem value="web-dev">Web Development</SelectItem>
+                    <SelectItem value="mobile-dev">
+                      Mobile Development
+                    </SelectItem>
+                    <SelectItem value="ui-ux">UI/UX Design</SelectItem>
+                    <SelectItem value="seo">SEO Optimization</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>

@@ -9,28 +9,35 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae quibusdam sunt",
+      "Building scalable and high-performance web applications using React.js, TypeScript, Redux, MobX and AWS serverless technologies. Experienced in SEO-friendly, responsive design and Progressive Web Apps (PWAs).",
     href: "",
   },
   {
     num: "02",
     title: "Mobile Development",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae quibusdam sunt",
+      "Expert in React Native and Android development, crafting seamless cross-platform and native mobile applications. Integrated deep linking, authentication, and cloud services for enhanced user experiences.",
     href: "",
   },
   {
     num: "03",
     title: "UI/UX Design",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae quibusdam sunt",
+      "Creating intuitive and user-friendly interfaces with Atomic Design principles, Storybook, Tailwind CSS, and WCAG-compliant accessibility standards. Collaborating closely with designers to enhance UX.",
     href: "",
   },
   {
     num: "04",
+    title: "Cloud & DevOps",
+    description:
+      "Deploying and managing cloud-based applications with AWS Lambda, Amplify, and CI/CD pipelines. Experience in automating deployments and optimizing cloud infrastructure for scalability and reliability.",
+    href: "",
+  },
+  {
+    num: "05",
     title: "SEO",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vitae quibusdam sunt",
+      "Enhancing website visibility with SEO best practices, including technical SEO, keyword optimization, schema markup, and performance improvements for better search rankings and organic traffic growth.",
     href: "",
   },
 ];

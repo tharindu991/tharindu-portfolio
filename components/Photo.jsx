@@ -34,7 +34,7 @@ const Photo = () => {
             cy="253"
             r="250"
             stroke="#00ff99"
-            strokeWidth="4"
+            strokeWidth="6"
             strokeLinecap="round"
             // strikeLineJoin="round" commenting due to version mismatch
             initial={{ strokeDasharray: "24 10 0 0" }}
