@@ -86,7 +86,7 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "With over seven years of experience in software engineering, I have contributed to innovative web and mobile applications across fintech, healthcare, AI, and telecommunication domains. My expertise spans front-end and full-stack development, cloud computing, and scalable architectures.",
+    "With over seven years of experience in software engineering, I have contributed to innovative web and mobile applications across AI, fintech, healthcare, e-commerce and telecommunication domains. My expertise spans front-end and full-stack development, cloud computing, and scalable architectures.",
   items: [
     {
       company: "BotCircuits",
@@ -158,7 +158,7 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "I specialize in building scalable and high-performance web and mobile applications using modern technologies. My expertise spans frontend, backend, cloud computing, and DevOps, enabling me to create seamless digital experiences.",
+    "I specialise in building scalable and high-performance web and mobile applications using modern technologies. My expertise spans frontend, backend, cloud computing, and DevOps, enabling me to create seamless digital experiences.",
   skillList: [
     {
       icon: <FaHtml5 />,

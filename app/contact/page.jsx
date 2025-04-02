@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -37,6 +37,32 @@ const info = [
 ];
 
 const Contact = () => {
+  const [result, setResult] = useState("Send Messaege");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.currentTarget);
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Done ✓");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
+  const handleChange = () => {
+    setResult("Send Message");
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -49,19 +75,54 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
           <div className="xl:h-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-accent">Let's work together</h3>
+            <form
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+              onSubmit={onSubmit}
+            >
+              <h3 className="text-4xl text-accent">
+                Let’s build the future in code!
+              </h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Temporibus, iste illo tempora qui accusamus.
+                Ready to build something innovative? Fill out the form below,
+                and let's code the future together!
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input
+                  type="hidden"
+                  name="access_key"
+                  value="9ac94e51-c46e-4de5-bbf4-920ac0659d13"
+                  onChange={handleChange}
+                />
+                <Input
+                  type="firstname"
+                  placeholder="Firstname"
+                  name="firstname"
+                  required
+                  onChange={handleChange}
+                />
+                <Input
+                  type="lastname"
+                  placeholder="Lastname"
+                  name="lastname"
+                  required
+                  onChange={handleChange}
+                />
+                <Input
+                  type="email"
+                  placeholder="Email address"
+                  name="email"
+                  required
+                  onChange={handleChange}
+                />
+                <Input
+                  type="phone"
+                  placeholder="Phone number"
+                  name="phone"
+                  required
+                  onChange={handleChange}
+                />
               </div>
-              <Select>
+              <Select name="service" required>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
@@ -73,16 +134,20 @@ const Contact = () => {
                       Mobile Development
                     </SelectItem>
                     <SelectItem value="ui-ux">UI/UX Design</SelectItem>
-                    <SelectItem value="seo">SEO Optimization</SelectItem>
+                    <SelectItem value="seo">SEO Optimisation</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
               <Textarea
+                type="message"
                 className="h-[200px]"
                 placeholder="Type your message here"
+                required
+                onChange={handleChange}
+                name="message"
               />
-              <Button size="md" className="max-w-40">
-                Send message
+              <Button size="md" className="max-w-40" type="submit">
+                {result}
               </Button>
             </form>
           </div>

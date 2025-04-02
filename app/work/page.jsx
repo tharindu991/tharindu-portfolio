@@ -21,42 +21,57 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "project 1",
+    title: "Cellcard - Selfcare Application",
     description:
-      "reLorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dolores, eaque hic exercitationem maiores.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
+      "The Cellcard Selfcare Application was designed to improve user interaction and service management capabilities for Cellcard customers.",
+    stack: [
+      { name: "React Native" },
+      { name: "MobX" },
+      { name: "AWS Serverless" },
+    ],
+    image: "/assets/work/cellcard.png",
+    live: "https://apps.apple.com/kh/app/cellcard/id977888051?platform=iphone",
     github: "",
   },
   {
     num: "02",
-    category: "Fullstack",
-    title: "project 2",
+    category: "frontend",
+    title: "Botcircuits",
     description:
-      "reLorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dolores, eaque hic exercitationem maiores.",
+      "Botcircuits is a No-Code Conversational AI platform that allows to create intelligent chatbots that answer questions by calling Actions - Functions, APIs, Document Search, and more.",
     stack: [
-      { name: "Html 5" },
+      { name: "React.js" },
       { name: "Tailwind CSS" },
-      { name: "Javascript" },
+      { name: "JavaScript" },
     ],
-    image: "/assets/work/thumb2.png",
-    live: "",
+    image: "/assets/work/botcircuits.png",
+    live: "https://www.botcircuits.com/",
     github: "",
   },
   {
     num: "03",
     category: "Fullstack",
-    title: "project 2",
+    title: "UKCeylon",
     description:
-      "reLorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dolores, eaque hic exercitationem maiores.",
+      "A Fully-featured E-Commerce Webapp with PWA technology for UK's leading supermarket store.",
+    stack: [{ name: "Wordpress" }, { name: "Woocommerce" }, { name: "PWA" }],
+    image: "/assets/work/ukceylon.png",
+    live: "https://www.ukceylon.com/",
+    github: "",
+  },
+  {
+    num: "04",
+    category: "Fullstack",
+    title: "Leap in! NDIS Planning",
+    description:
+      "An application facilitating access to care services for differently abled individuals under the National Disability Insurance Scheme (NDIS) in Australia.",
     stack: [
-      { name: "Html 5" },
-      { name: "Tailwind CSS" },
-      { name: "Javascript" },
+      { name: "React Native" },
+      { name: "React Native Web" },
+      { name: "AWS Serverless" },
     ],
-    image: "/assets/work/thumb3.png",
-    live: "",
+    image: "/assets/work/leap-in.png",
+    live: "https://apps.apple.com/au/app/leap-in-ndis-planning/id1399430949?platform=iphone",
     github: "",
   },
 ];
@@ -85,7 +100,7 @@ const Work = () => {
                 {project.num}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.title}
               </h2>
               <p className="text-white/60">{project.description}</p>
               <ul className="flex gap-4">

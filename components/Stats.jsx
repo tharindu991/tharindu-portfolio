@@ -15,8 +15,8 @@ const stats = [
     text: "Technologies mastered",
   },
   {
-    num: 130,
-    text: "Client ROI",
+    num: 16,
+    text: "Apps Scaled",
   },
 ];
 
