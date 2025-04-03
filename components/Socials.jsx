@@ -19,11 +19,10 @@ const Socials = ({ containerStyles, iconStyles }) => {
             key={index}
             href={item.path}
             className={iconStyles}
-            legacyBehavior
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <a target="_blank" className={iconStyles}>
-              {item.icon}
-            </a>
+            {item.icon}
           </Link>
         );
       })}

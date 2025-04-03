@@ -31,7 +31,8 @@ const projects = [
     ],
     image: "/assets/work/cellcard.png",
     live: "https://apps.apple.com/kh/app/cellcard/id977888051?platform=iphone",
-    github: "",
+    github:
+      "https://apps.apple.com/kh/app/cellcard/id977888051?platform=iphone",
   },
   {
     num: "02",
@@ -42,7 +43,7 @@ const projects = [
     stack: [{ name: "React.js" }, { name: "Tailwind CSS" }, { name: "Redux" }],
     image: "/assets/work/botcircuits.png",
     live: "https://www.botcircuits.com/",
-    github: "",
+    github: "https://www.botcircuits.com/",
   },
   {
     num: "03",
@@ -53,7 +54,7 @@ const projects = [
     stack: [{ name: "Wordpress" }, { name: "Woocommerce" }, { name: "PWA" }],
     image: "/assets/work/ukceylon.png",
     live: "https://www.ukceylon.com/",
-    github: "",
+    github: "https://www.ukceylon.com/",
   },
   {
     num: "04",
@@ -68,7 +69,8 @@ const projects = [
     ],
     image: "/assets/work/leap-in.png",
     live: "https://apps.apple.com/au/app/leap-in-ndis-planning/id1399430949?platform=iphone",
-    github: "",
+    github:
+      "https://apps.apple.com/au/app/leap-in-ndis-planning/id1399430949?platform=iphone",
   },
 ];
 
@@ -111,7 +113,11 @@ const Work = () => {
               </ul>
               <div className="border border-white/20"></div>
               <div className="flex items-center gap-4">
-                <Link href={project.live}>
+                <Link
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -121,7 +127,11 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                <Link href={project.github}>
+                <Link
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
