@@ -39,11 +39,7 @@ const projects = [
     title: "Botcircuits",
     description:
       "Botcircuits is a No-Code Conversational AI platform that allows to create intelligent chatbots that answer questions by calling Actions - Functions, APIs, Document Search, and more.",
-    stack: [
-      { name: "React.js" },
-      { name: "Tailwind CSS" },
-      { name: "JavaScript" },
-    ],
+    stack: [{ name: "React.js" }, { name: "Tailwind CSS" }, { name: "Redux" }],
     image: "/assets/work/botcircuits.png",
     live: "https://www.botcircuits.com/",
     github: "",

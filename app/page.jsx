@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -26,6 +27,12 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1ggCRMNw4GOqGJ8Z02G8paOcwDSs6f39z/view?usp=drive_link",
+                    "_blank"
+                  );
+                }}
               >
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />

@@ -37,7 +37,7 @@ const services = [
     num: "05",
     title: "SEO",
     description:
-      "Enhancing website visibility with SEO best practices, including technical SEO, keyword optimization, schema markup, and performance improvements for better search rankings and organic traffic growth.",
+      "Enhancing website visibility with SEO best practices, including technical SEO, keyword optimisation, schema markup, and performance improvements for better search rankings and organic traffic growth.",
     href: "",
   },
 ];
