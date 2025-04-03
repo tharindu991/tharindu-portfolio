@@ -40,7 +40,7 @@ import {
 } from "@/components/ui/tooltip";
 
 import { motion } from "framer-motion";
-import { ScrollArea } from "@radix-ui/react-scroll-area";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const about = {
   title: "About me",
@@ -136,20 +136,21 @@ const education = {
       institution: "Meta",
       degree: "Professional Certificate in Meta Front-End Development",
       duration: "2023",
+      link: "https://www.coursera.org/account/accomplishments/specialization/RFXH2S35PBEB",
     },
     {
       institution: "Northumbria University, UK",
-      degree: "M.Sc. International Project Management",
+      degree: "M.Sc. in International Project Management",
       duration: "2022 - 2024",
     },
     {
       institution: "University of Westminster, UK",
-      degree: "M.Sc. Advanced Software Engineering",
+      degree: "M.Sc. in Advanced Software Engineering",
       duration: "2017 - 2019",
     },
     {
       institution: "Sri Lanka Institute of Information Technology (SLIIT)",
-      degree: "B.Sc. (Hons) in Information Technology - Special",
+      degree: "B.Sc. Special (Hons) in Information Technology",
       duration: "2011 - 2015",
     },
   ],
@@ -309,6 +310,7 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
+
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => {
@@ -325,9 +327,30 @@ const Resume = () => {
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                             <p className="text-white/60">{item.institution}</p>
                           </div>
+                          {item.link && (
+                            <a
+                              href={item.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-accent underline"
+                            >
+                              View Certificate
+                            </a>
+                          )}
                         </li>
                       );
                     })}
+                    <div
+                      data-iframe-width="150"
+                      data-iframe-height="270"
+                      data-share-badge-id="ce6de931-f4e6-4ebb-bdec-33abf0810f6e"
+                      data-share-badge-host="https://www.credly.com"
+                    ></div>
+                    <script
+                      type="text/javascript"
+                      async
+                      src="//cdn.credly.com/assets/utilities/embed.js"
+                    ></script>
                   </ul>
                 </ScrollArea>
               </div>
