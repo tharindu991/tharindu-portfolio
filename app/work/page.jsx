@@ -48,17 +48,6 @@ const projects = [
   {
     num: "03",
     category: "Fullstack",
-    title: "UKCeylon",
-    description:
-      "A Fully-featured E-Commerce Webapp with PWA technology for UK's leading supermarket store.",
-    stack: [{ name: "Wordpress" }, { name: "Woocommerce" }, { name: "PWA" }],
-    image: "/assets/work/ukceylon.png",
-    live: "https://www.ukceylon.com/",
-    github: "https://www.ukceylon.com/",
-  },
-  {
-    num: "04",
-    category: "Fullstack",
     title: "Leap in! NDIS Planning",
     description:
       "An application facilitating access to care services for differently abled individuals under the National Disability Insurance Scheme (NDIS) in Australia.",
@@ -71,6 +60,33 @@ const projects = [
     live: "https://apps.apple.com/au/app/leap-in-ndis-planning/id1399430949?platform=iphone",
     github:
       "https://apps.apple.com/au/app/leap-in-ndis-planning/id1399430949?platform=iphone",
+  },
+  {
+    num: "04",
+    category: "Fullstack",
+    title: "LOLC Vehicle Valuation",
+    description:
+      "A native Android app for LOLC field officers to streamline asset valuations. Features include offline support, real-time API sync, and portable thermal printing. Improved field efficiency, reduced paperwork, and ensured secure data handling.",
+    stack: [
+      { name: "Native Android (Java)" },
+      { name: "Retrofit" },
+      { name: "Room" },
+    ],
+    image: "/assets/work/lolc-valuation.png",
+    live: "https://play.google.com/store/apps/details?id=com.loits.lomovaluation.valuationproject",
+    github:
+      "https://play.google.com/store/apps/details?id=com.loits.lomovaluation.valuationproject",
+  },
+  {
+    num: "05",
+    category: "Fullstack",
+    title: "UKCeylon",
+    description:
+      "A Fully-featured E-Commerce Webapp with PWA technology for UK's leading supermarket store.",
+    stack: [{ name: "Wordpress" }, { name: "Woocommerce" }, { name: "PWA" }],
+    image: "/assets/work/ukceylon.png",
+    live: "https://www.ukceylon.com/",
+    github: "https://www.ukceylon.com/",
   },
 ];
 

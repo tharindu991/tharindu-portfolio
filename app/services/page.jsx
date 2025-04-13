@@ -30,7 +30,7 @@ const services = [
     num: "04",
     title: "Cloud & DevOps",
     description:
-      "Deploying and managing cloud-based applications with AWS Lambda, Amplify, and CI/CD pipelines. Experience in automating deployments and optimising cloud infrastructure for scalability and reliability.",
+      "Experienced in deploying and managing cloud-based applications using AWS Serverless (Lambda), Google Cloud Platform (Firebase), and Spring MVC. Proficient in automating deployments through CI/CD pipelines and optimising cloud infrastructure for scalability, performance, and reliability.",
     href: "",
   },
   {
