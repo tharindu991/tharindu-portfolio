@@ -15,7 +15,6 @@ import {
 } from "@/components/ui/select";
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import { Description } from "@radix-ui/react-dialog";
 import { motion } from "framer-motion";
 
 const info = [
@@ -27,7 +26,7 @@ const info = [
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "tharindu991@gmail.com",
+    description: "tharindu@realupglobal.co.uk",
   },
   {
     icon: <FaMapMarkerAlt />,
@@ -37,7 +36,7 @@ const info = [
 ];
 
 const Contact = () => {
-  const [result, setResult] = useState("Send Messaege");
+  const [result, setResult] = useState("Start a conversation");
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -60,7 +59,7 @@ const Contact = () => {
   };
 
   const handleChange = () => {
-    setResult("Send Message");
+    setResult("Start a conversation");
   };
 
   return (
@@ -79,12 +78,12 @@ const Contact = () => {
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
               onSubmit={onSubmit}
             >
-              <h3 className="text-4xl text-accent">
-                Let’s build the future in code!
+              <h3 className="text-3xl sm:text-4xl text-accent">
+                Have a project, product idea or digital growth challenge?
               </h3>
               <p className="text-white/60">
-                Ready to build something innovative? Fill out the form below,
-                and let's code the future together!
+                I’m open to conversations around websites, e-commerce, SaaS
+                products, technical delivery and digital marketing projects.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input
@@ -95,14 +94,14 @@ const Contact = () => {
                 />
                 <Input
                   type="firstname"
-                  placeholder="Firstname"
+                  placeholder="First name"
                   name="firstname"
                   required
                   onChange={handleChange}
                 />
                 <Input
                   type="lastname"
-                  placeholder="Lastname"
+                  placeholder="Last name"
                   name="lastname"
                   required
                   onChange={handleChange}
@@ -129,12 +128,18 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="web-dev">Web Development</SelectItem>
-                    <SelectItem value="mobile-dev">
-                      Mobile Development
+                    <SelectItem value="web-ecommerce-app">
+                      Web, App & E-commerce Development
                     </SelectItem>
-                    <SelectItem value="ui-ux">UI/UX Design</SelectItem>
-                    <SelectItem value="seo">SEO Optimisation</SelectItem>
+                    <SelectItem value="saas-product">
+                      SaaS & Product Development
+                    </SelectItem>
+                    <SelectItem value="brand-digital-growth">
+                      Brand & Digital Growth
+                    </SelectItem>
+                    <SelectItem value="technical-leadership">
+                      Technical Leadership
+                    </SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
@@ -146,7 +151,7 @@ const Contact = () => {
                 onChange={handleChange}
                 name="message"
               />
-              <Button size="md" className="max-w-40" type="submit">
+              <Button className="w-fit px-6" type="submit">
                 {result}
               </Button>
             </form>

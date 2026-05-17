@@ -7,37 +7,30 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Web, App & E-commerce Development",
     description:
-      "Building scalable and high-performance web applications using React.js, Next.js, Wordpress, TypeScript, Redux, MobX and AWS serverless technologies. Experienced in SEO-friendly, responsive design and Progressive Web Apps (PWAs).",
+      "Business websites, e-commerce platforms, mobile apps and custom web experiences built around usability, performance, trust and clear commercial outcomes.",
     href: "",
   },
   {
     num: "02",
-    title: "Mobile Development",
+    title: "SaaS & Product Development",
     description:
-      "Expert in React Native (Android, iOS) and native Android development (Java, Kotlin), crafting seamless cross-platform and native mobile applications. Integrated deep linking, authentication, and cloud services for enhanced user experiences.",
+      "Product planning, MVP delivery, user flows, integrations and full-stack implementation for SaaS and digital product ideas.",
     href: "",
   },
   {
     num: "03",
-    title: "UI/UX Design",
+    title: "Brand & Digital Growth",
     description:
-      "Creating intuitive and user-friendly interfaces with HTML5, CSS3, Tailwind CSS, Storybook, Atomic Design principles and WCAG-compliant accessibility standards. Collaborating closely with designers to enhance UX.",
+      "Branding, SEO, social media management, content planning and local visibility support to help businesses build trust, attract customers and grow online.",
     href: "",
   },
   {
     num: "04",
-    title: "Cloud & DevOps",
+    title: "Technical Leadership",
     description:
-      "Experienced in deploying and managing cloud-based applications using AWS Serverless (Lambda), Google Cloud Platform (Firebase), and Spring MVC. Proficient in automating deployments through CI/CD pipelines and optimising cloud infrastructure for scalability, performance, and reliability.",
-    href: "",
-  },
-  {
-    num: "05",
-    title: "SEO",
-    description:
-      "Enhancing website visibility with SEO best practices, including technical SEO, keyword optimisation, schema markup, and performance improvements for better search rankings and organic traffic growth.",
+      "Solution planning, architecture guidance, delivery support and hands-on engineering across web, mobile, cloud and product-led projects.",
     href: "",
   },
 ];
@@ -78,7 +71,7 @@ const Services = () => {
                   </Link>
                 </div>
                 {/* title */}
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+                <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold leading-tight text-white group-hover:text-accent transition-all duration-500">
                   {service.title}
                 </h2>
                 {/* description */}

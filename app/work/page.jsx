@@ -21,9 +21,9 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "Cellcard - Selfcare Application",
+    title: "Cellcard Selfcare App",
     description:
-      "The Cellcard Selfcare Application was designed to improve user interaction and service management capabilities for Cellcard customers.",
+      "A mobile selfcare application built to improve customer account access, service management and day-to-day user support for Cellcard customers.",
     stack: [
       { name: "React Native" },
       { name: "MobX" },
@@ -107,6 +107,10 @@ const Work = () => {
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
+        <p className="max-w-[760px] mb-10 text-center xl:text-left text-white/60">
+          Selected work across software development, e-commerce, mobile apps,
+          digital marketing and product-led business solutions.
+        </p>
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">

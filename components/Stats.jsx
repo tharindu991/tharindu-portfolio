@@ -3,20 +3,23 @@ import CountUp from "react-countup";
 
 const stats = [
   {
-    num: 7,
+    num: 10,
+    suffix: "+",
     text: "Years of experience",
   },
   {
-    num: 12,
-    text: "Projects completed",
+    num: 2,
+    text: "Companies founded",
   },
   {
-    num: 8,
-    text: "Technologies mastered",
+    num: 6,
+    suffix: "+",
+    text: "Sectors served",
   },
   {
-    num: 16,
-    text: "Apps Scaled",
+    num: 20,
+    suffix: "+",
+    text: "Projects delivered",
   },
 ];
 
@@ -33,6 +36,7 @@ const Stats = () => {
               >
                 <CountUp
                   end={item.num}
+                  suffix={item.suffix || ""}
                   duration={5}
                   delay={2}
                   className="text-4xl xl:text-6xl font-extrabold"

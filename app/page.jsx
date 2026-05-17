@@ -13,14 +13,16 @@ const Home = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Engineer</span>
+            <span className="text-xl">Founder, Product & Technical Lead</span>
             <h1 className="h1 mb-6">
               Hello I'm <br />{" "}
               <span className="text-accent">Tharindu Bandara</span>{" "}
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
-              Excelling at crafting elegant digital experiences, proficient in a
-              wide range of programming languages and technologies.
+            <p className="max-w-[620px] mb-9 text-white/80">
+              I build practical digital products for businesses, including
+              websites, e-commerce platforms, mobile apps and SaaS products. I
+              currently lead Realup, where my work spans product strategy,
+              client delivery, digital growth and hands-on technical direction.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
@@ -29,8 +31,8 @@ const Home = () => {
                 className="uppercase flex items-center gap-2"
                 onClick={() => {
                   window.open(
-                    "https://drive.google.com/file/d/1ggCRMNw4GOqGJ8Z02G8paOcwDSs6f39z/view?usp=drive_link",
-                    "_blank"
+                    "https://drive.google.com/file/d/1wZ1PeZ-KOubrDdjuNSYad-AC__J8Hgna/view?usp=sharing",
+                    "_blank",
                   );
                 }}
               >

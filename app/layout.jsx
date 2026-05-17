@@ -14,7 +14,7 @@ const jetBrainsMono = JetBrains_Mono({
 export const metadata = {
   title: "Tharindu Bandara",
   description:
-    "Software Engineer with 7+ years of experience designing and developing high-performance web and mobile solutions using React, React Native, Android, AWS, and modern technologies.",
+    "Founder, Product & Technical Lead working across websites, e-commerce, SaaS products, digital growth, client delivery and hands-on technical direction.",
 };
 
 export default function RootLayout({ children }) {

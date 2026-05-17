@@ -1,33 +1,28 @@
 "use client";
 
 import {
-  FaHtml5,
-  FaCss3,
   FaJs,
   FaReact,
   FaFigma,
   FaNodeJs,
-  FaDatabase,
   FaAws,
   FaAndroid,
+  FaSearch,
+  FaShareAlt,
+  FaNetworkWired,
 } from "react-icons/fa";
 
 import {
   SiTailwindcss,
-  SiNextdoor,
   SiNextdotjs,
   SiRedux,
   SiTypescript,
-  SiExpress,
-  SiJest,
-  SiBitbucket,
-  SiDocker,
-  SiMobx,
-  SiStoryblok,
-  SiStorybook,
-  SiAntdesign,
-  SiShadcnui,
-  SiIos,
+  SiVercel,
+  SiFirebase,
+  SiWordpress,
+  SiShopify,
+  SiMysql,
+  SiJira,
 } from "react-icons/si";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -43,140 +38,114 @@ import { motion } from "framer-motion";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 const about = {
-  title: "About me",
-  description:
-    "I am a Senior Software Engineer based in the UK with 7+ years of experience in developing high-performance web and mobile applications. I specialise in React.js, React Native, TypeScript, Android, AWS serverless, and modern frontend technologies, crafting scalable and user-centric digital solutions. Passionate about UI/UX, performance optimisation, and cloud-based architectures, I excel at building intuitive and efficient applications that drive engagement and business growth.",
+  title: "About",
+  description: [
+    "I’m Tharindu, a founder and technical lead with a background in full-stack software engineering, product delivery and digital growth.",
+    "Over the past 10+ years, I’ve worked across fintech, healthcare, telecom, hospitality, e-commerce and AI-enabled software, building web platforms, mobile apps, APIs, e-commerce systems and SaaS-style products.",
+    "Today, I lead Realup, a UK-based software and digital marketing company helping businesses improve their online presence through websites, e-commerce, SEO, branding, social media and practical digital solutions. I also work on Realup Pulse, a SaaS product initiative focused on helping hospitality businesses improve marketing consistency and visibility.",
+    "I enjoy working where business, product and technology meet — understanding the real problem, shaping the right solution and seeing it through from idea to launch.",
+  ],
   info: [
     {
       fieldName: "Name",
       fieldValue: "Tharindu Bandara",
     },
     {
-      fieldName: "Phone",
-      fieldValue: "+44 740 565 9803",
-    },
-    {
       fieldName: "Experience",
-      fieldValue: "7+ Years",
-    },
-    {
-      fieldName: "Skype",
-      fieldValue: "tharindu991",
+      fieldValue: "10+ Years",
     },
     {
       fieldName: "Nationality",
       fieldValue: "Sri Lankan",
     },
     {
-      fieldName: "Email",
-      fieldValue: "tharindu991@gmail.com",
-    },
-    {
-      fieldName: "Freelance",
-      fieldValue: "Available",
-    },
-    {
       fieldName: "Languages",
       fieldValue: "English, Sinhala",
+    },
+    {
+      fieldName: "Phone",
+      fieldValue: "+44 7405 659 803",
+    },
+    {
+      fieldName: "Email",
+      fieldValue: "tharindu@realupglobal.co.uk",
+    },
+    {
+      fieldName: "Location",
+      fieldValue: "London, United Kingdom",
     },
   ],
 };
 
 const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "My Experience",
+  title: "Experience",
   description:
-    "With over seven years of experience in software engineering, I have contributed to innovative web and mobile applications across AI, fintech, healthcare, e-commerce and telecommunication domains. My expertise spans front-end and full-stack development, cloud computing, and scalable architectures.",
+    "A practical background across founder-led business delivery, product development, technical leadership and full-stack software engineering.",
   items: [
     {
+      company: "Realup Global Limited",
+      position: "Founder & Managing Director",
+      duration: "2025 – Present",
+    },
+    {
       company: "BotCircuits",
-      position: "Frontend Developer (Freelance)",
-      duration: "2023 - 2024",
+      position: "Full-Stack Engineer",
+      duration: "2024",
     },
     {
-      company: "Softwentures Pvt Ltd",
-      position: "Senior Software Engineer",
-      duration: "2021 - 2022",
-      location: "Colombo, Sri Lanka",
+      company: "Softwentures Digital Solutions Pvt Ltd",
+      position: "Co-Founder & Technical Lead",
+      duration: "2021 – 2022",
     },
     {
-      company: "Mitra Innovation Ltd",
-      position: "Senior Software Engineer",
-      duration: "2018 - 2021",
-      location: "Colombo, Sri Lanka",
+      company: "Mitra Innovation Limited",
+      position: "Senior Software Engineer / Software Engineer",
+      duration: "2018 – 2021",
     },
     {
-      company: "Mitra Innovation Ltd",
-      position: "Software Engineer",
-      duration: "2017 - 2018",
-      location: "Colombo, Sri Lanka",
-    },
-    {
-      company: "LOLC Technologies Ltd",
+      company: "LOLC Technologies Limited",
       position: "Associate Software Engineer",
-      duration: "2016 - 2017",
-      location: "Colombo, Sri Lanka",
-    },
-    {
-      company: "LOLC Technologies Ltd",
-      position: "Trainee Software Engineer",
-      duration: "2015 - 2016",
-      location: "Colombo, Sri Lanka",
+      duration: "2015 – 2018",
     },
   ],
 };
 
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My Education",
+  title: "Education",
   description:
-    "I have pursued a strong academic foundation in software engineering and project management, complemented by professional certifications in software development. My education has equipped me with the technical expertise and leadership skills to deliver high-quality software solutions.",
+    "Academic background in project management, software engineering and information technology, supported by continued professional development across software, product and digital delivery.",
   items: [
     {
-      institution: "Meta",
+      institution: "Meta / Coursera",
       degree: "Professional Certificate in Meta Front-End Development",
       duration: "2023",
       link: "https://www.coursera.org/account/accomplishments/specialization/RFXH2S35PBEB",
     },
     {
       institution: "Northumbria University, UK",
-      degree: "M.Sc. in International Project Management",
-      duration: "2022 - 2024",
+      degree: "MSc International Project Management",
+      duration: "2022 – 2024",
     },
     {
       institution: "University of Westminster, UK",
-      degree: "M.Sc. in Advanced Software Engineering",
-      duration: "2017 - 2019",
+      degree: "MSc Advanced Software Engineering",
+      duration: "2017 – 2019",
     },
     {
-      institution: "Sri Lanka Institute of Information Technology (SLIIT)",
-      degree: "B.Sc. Special (Hons) in Information Technology",
-      duration: "2011 - 2015",
+      institution: "Sri Lanka Institute of Information Technology",
+      degree: "BSc (Hons) Information Technology",
+      duration: "2011 – 2015",
     },
   ],
 };
 
 const skills = {
-  title: "My Skills",
+  title: "Skills",
   description:
-    "I specialise in building scalable and high-performance web and mobile applications using modern technologies. My expertise spans frontend, backend, cloud computing, and DevOps, enabling me to create seamless digital experiences.",
+    "A practical mix of product leadership, full-stack engineering, mobile development, cloud services and digital growth tools.",
   skillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "HTML5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "CSS3",
-    },
-    {
-      icon: <FaJs />,
-      name: "JavaScript",
-    },
-    {
-      icon: <SiTypescript />,
-      name: "TypeScript",
-    },
     {
       icon: <FaReact />,
       name: "React.js",
@@ -184,6 +153,14 @@ const skills = {
     {
       icon: <SiNextdotjs />,
       name: "Next.js",
+    },
+    {
+      icon: <SiTypescript />,
+      name: "TypeScript",
+    },
+    {
+      icon: <FaJs />,
+      name: "JavaScript",
     },
     {
       icon: <FaReact />,
@@ -194,61 +171,60 @@ const skills = {
       name: "Android",
     },
     {
-      icon: <SiIos />,
-      name: "iOS",
+      icon: <FaNodeJs />,
+      name: "Node.js",
+    },
+    {
+      icon: <FaAws />,
+      name: "AWS",
+    },
+    {
+      icon: <SiVercel />,
+      name: "Vercel",
+    },
+    {
+      icon: <SiFirebase />,
+      name: "Firebase",
+    },
+    {
+      icon: <SiWordpress />,
+      name: "WordPress",
+    },
+    {
+      icon: <SiShopify />,
+      name: "Shopify",
     },
     {
       icon: <SiTailwindcss />,
       name: "Tailwind CSS",
     },
     {
-      icon: <SiAntdesign />,
-      name: "Ant Design",
-    },
-    {
-      icon: <SiShadcnui />,
-      name: "Shadcn UI",
-    },
-    {
       icon: <SiRedux />,
       name: "Redux",
     },
     {
-      icon: <SiMobx />,
-      name: "MobX",
-    },
-
-    {
-      icon: <FaNodeJs />,
-      name: "Node.js",
+      icon: <FaNetworkWired />,
+      name: "REST APIs",
     },
     {
-      icon: <SiExpress />,
-      name: "Express.js",
+      icon: <SiMysql />,
+      name: "MySQL",
     },
     {
-      icon: <FaAws />,
-      name: "AWS (Lambda, Amplify, S3)",
+      icon: <FaSearch />,
+      name: "SEO",
     },
     {
-      icon: <FaDatabase />,
-      name: "MySQL, Oracle & NoSQL",
-    },
-    {
-      icon: <SiJest />,
-      name: "Jest & React Testing Library",
+      icon: <FaShareAlt />,
+      name: "Social Media Management",
     },
     {
       icon: <FaFigma />,
       name: "Figma",
     },
     {
-      icon: <SiStorybook />,
-      name: "Storybook",
-    },
-    {
-      icon: <SiBitbucket />,
-      name: "Git & Bitbucket",
+      icon: <SiJira />,
+      name: "Jira",
     },
   ],
 };
@@ -271,7 +247,7 @@ const Resume = () => {
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About Me</TabsTrigger>
+            <TabsTrigger value="about">About</TabsTrigger>
           </TabsList>
 
           <div className="min-h-[70vh] w-full">
@@ -286,16 +262,18 @@ const Resume = () => {
                     {experience.items.map((item, index) => {
                       return (
                         <li
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg-items-start gap-1"
+                          className="bg-[#232329] min-h-[184px] py-6 px-8 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                           key={index}
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px text-center lg-text-left]">
+                          <h3 className="text-lg sm:text-xl max-w-[280px] min-h-[60px] text-center lg:text-left leading-snug">
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-3">
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.company}</p>
+                            <p className="text-white/60 text-center lg:text-left">
+                              {item.company}
+                            </p>
                           </div>
                         </li>
                       );
@@ -316,16 +294,18 @@ const Resume = () => {
                     {education.items.map((item, index) => {
                       return (
                         <li
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg-items-start gap-1"
+                          className="bg-[#232329] min-h-[184px] py-6 px-8 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                           key={index}
                         >
-                          <span className="text-accent">{item.degree}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px text-center lg-text-left]">
-                            {item.position}
+                          <span className="text-accent">{item.duration}</span>
+                          <h3 className="text-lg sm:text-xl max-w-[280px] min-h-[60px] text-center lg:text-left leading-snug">
+                            {item.degree}
                           </h3>
                           <div className="flex items-center gap-3">
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.institution}</p>
+                            <p className="text-white/60 text-center lg:text-left">
+                              {item.institution}
+                            </p>
                           </div>
                           {item.link && (
                             <a
@@ -391,9 +371,11 @@ const Resume = () => {
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600] text-white/60 mx-auto xl:mx-0">
-                  {about.description}
-                </p>
+                <div className="max-w-[700px] text-white/60 mx-auto xl:mx-0 space-y-4">
+                  {about.description.map((paragraph, index) => (
+                    <p key={index}>{paragraph}</p>
+                  ))}
+                </div>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px]">
                   {about.info.map((item, index) => {
                     return (
