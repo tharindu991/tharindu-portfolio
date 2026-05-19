@@ -13,21 +13,21 @@ const Photo = () => {
           transition: { delay: 2, duration: 0.4, ease: "easeInOut" },
         }}
       >
-        <motion.div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
+        <motion.div className="absolute left-1/2 top-1/2 h-[276px] w-[276px] -translate-x-1/2 -translate-y-[54%] mix-blend-lighten [filter:drop-shadow(0_18px_28px_rgba(0,0,0,0.35))] xl:h-[462px] xl:w-[462px]">
           <Image
             src="/assets/photo.png"
             priority
             quality={100}
             fill
             alt=""
-            className="object-contain"
+            className="object-contain [filter:contrast(1.03)_saturate(1.02)]"
           />
         </motion.div>
         <motion.svg
-          className="w-[300px] xl:w-[506px] h-[300px] xl:j-[506px]"
+          className="h-[300px] w-[300px] xl:h-[506px] xl:w-[506px]"
           fill="transparent"
           viewBox="0 0 506 506"
-          xmlns="http://www.w3.orag/2000/svg"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <motion.circle
             cx="253"

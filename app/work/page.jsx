@@ -37,10 +37,17 @@ const projects = [
   {
     num: "02",
     category: "frontend",
-    title: "Botcircuits",
+    title: "BotCircuits AI Platform",
     description:
-      "Botcircuits is a No-Code Conversational AI platform that allows to create intelligent chatbots that answer questions by calling Actions - Functions, APIs, Document Search, and more.",
-    stack: [{ name: "React.js" }, { name: "Tailwind CSS" }, { name: "Redux" }],
+      "Contributed to a no-code conversational AI platform for building agents that answer questions, trigger workflows and connect with APIs, functions and document search.",
+    stack: [
+      { name: "React.js" },
+      { name: "Tailwind CSS" },
+      { name: "Python" },
+      { name: "AWS Serverless" },
+      { name: "ECS" },
+      { name: "LLM APIs" },
+    ],
     image: "/assets/work/botcircuits.png",
     live: "https://www.botcircuits.com/",
     github: "https://www.botcircuits.com/",
@@ -121,10 +128,10 @@ const Work = () => {
                 {project.title}
               </h2>
               <p className="text-white/60">{project.description}</p>
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-x-4 gap-y-2">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-xl text-accent">
+                    <li key={index} className="text-base sm:text-xl text-accent">
                       {item.name}
                       {index !== project.stack.length - 1 && ","}
                     </li>
